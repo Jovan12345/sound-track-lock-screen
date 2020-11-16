@@ -15,7 +15,7 @@ const onTermSubmit = async (term) => {
         },
     });
 
-    console.log(response)
+    console.log(response.data.items[0].id.videoId)
 }
 
 export default function Videos() {
