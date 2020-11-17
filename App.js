@@ -28,7 +28,12 @@ export default function App() {
         <Tab.Screen
           name="Videos"
           component={VideosScreen}
-
+          options={{
+            tabBarLabel: 'Videos',
+            tabBarIcon: () => (
+              <FontAwesome name="youtube" size={20} />
+            )
+          }}
         />
       </Tab.Navigator>
     </NavigationContainer>
